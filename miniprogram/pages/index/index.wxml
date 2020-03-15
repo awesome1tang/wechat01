@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+ 
+  <view class="login-icon">  
+    <image class="login-img" src="/images/logo.jpg"></image>  
+  </view>
+ 
+  <view class="login-from">  
+  <form bindsubmit="formSubmit" class='form'>
+
+  <view class="loginBox">
+
+  <view class="name">
+    <!--inline-block行内块设置，不换行  inline设置在行内-->
+    <view class="inputv">
+    <image src='/images/name.png' style='display:inline;' mode="aspectFit"></image>
+    </view>
+    <input style='width:80%;display:inline-block;height:100%;' placeholder-style='font-size:12px;'      placeholder='用户名'></input>
+  </view>
+
+
+
+<view class="password">
+  <view class="inputv"><image src='/images/key.png' style='display:inline' mode="aspectFit"></image>
+  </view>
+ <input style='width:80%;display:inline-block;height:100%;' placeholder-style='font-size:12px;' placeholder='密码'></input>     
+</view>
+
+
+</view>
+
+<view class="loginBtnView">  
+      <button class="loginBtn" size="{{primarySize}}"  form-type='submit'>登录</button>
+      <button class="wexinBtn" size="{{primarySize}}" >微信登录</button>  
+</view>
+
+
+
+  </form>
+  
+  </view>  
+</view>

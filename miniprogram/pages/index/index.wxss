@@ -1,0 +1,105 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  background-size:100%;
+  background-image: url('https://img-blog.csdn.net/20180727144314722?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdPa29L/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70');
+}
+ 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #f2f2f2;     */
+} 
+ 
+/*登录图片*/
+.login-icon{
+  flex: none;
+  margin: 0 auto;
+  margin-top: 200rpx;
+}
+.login-img{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 110rpx;
+  opacity: 0.6;
+}
+ 
+/*表单内容*/
+.login-from {
+  margin-top: 90px;
+  flex: auto;
+  height:100%;
+}
+
+.loginBox{
+width:70%;
+margin-left:15%;
+
+}
+
+ 
+/* 输入框 */
+.name{
+border:1px solid #0e0101;
+border-radius:8px;
+border-radius:8px;
+width:100%;
+height:38px;
+display:inline-block;
+background:#fff;
+ 
+}
+.password{
+ width:100%;
+ height:38px;
+ display:inline-block;
+ background:#fff;
+ border:1px solid #0e0101;
+ border-radius:8px;
+ border-radius:8px;
+
+}
+
+.inputv{
+
+  width:20%;
+  display:inline-block;
+  height:60%;
+  margin-bottom: 2%;
+
+}
+
+
+
+/*按钮*/
+.loginBtnView {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+ 
+.loginBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 60rpx;
+  margin-top: 35px;
+  color: #fff;
+  background-color:#7e8ef0;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+}
+
+.wexinBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 60rpx;
+  margin-top: 2px;
+  color: #fff;
+  background-color:#10d86a;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+}
+
