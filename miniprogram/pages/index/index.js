@@ -3,12 +3,45 @@ const app = getApp()
 
 Page({
   data: {
-    avatarUrl: './user-unlogin.png',
-    userInfo: {},
-    logged: false,
-    takeSession: false,
-    requestResult: ''
+    name:'',
+    password:'',
+    primarySize:9
   },
+
+  formSubmit: function (e) {
+
+    let { username, password } = e.detail.value;
+    //还是json数据好e.detail.value
+    var that = this;
+    var formdata = e.detail.value;
+    wx.request({
+      url: 'http://api.tianapi.com/usermake/index',
+      data:formdata,
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data);
+        var data = res.data;
+        if(data.code == 240){
+          console.log('登录成功');
+          that.showok();
+        }
+      }
+    })
+    
+  },
+
+//弹出框，原来this就是这个page里面的内容
+  showok: function () {
+    wx.showToast({
+      title: '登录成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+
+
 
   onLoad: function() {
     if (!wx.cloud) {
