@@ -31,7 +31,12 @@
 
 <view class="loginBtnView">  
       <button class="loginBtn" size="{{primarySize}}"  form-type='submit'>登录</button>
-      <button class="wexinBtn" size="{{primarySize}}" >微信登录</button>  
+      <view wx:if="{{canIUse}}">
+      <button class="wexinBtn" type='primary' open-type="getUserInfo" size="{{primarySize}}" bindgetuserinfo="bindGetUserInfo" >微信登录</button>
+      </view>
+      <view wx:else>
+      <button class="wexinBtn" size="{{primarySize}}" >升级微信版本</button>
+      </view>    
 </view>
 
 
