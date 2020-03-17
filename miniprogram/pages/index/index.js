@@ -162,8 +162,8 @@ Page({
 
   imi:function(){
 
-    wx.redirectTo({
-      url: '../imi/imi',
+    wx.reLaunch({
+      url: '../imi/imi'
     })
 
   },

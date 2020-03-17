@@ -8,7 +8,8 @@
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ff9800",
     "navigationBarTitleText": "通讯测试",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
