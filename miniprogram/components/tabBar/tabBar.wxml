@@ -1,5 +1,5 @@
 <view class="ha-tab-bar  ha-tab-default-bar">
-  <view wx:for="{{business}}"  wx:key="key"  class="ha-tab-item" style="width:33.33%;" >
+  <view wx:for="{{business}}"  wx:key="id"  class="ha-tab-item" style="width:33.33%;" >
     <view class="ha-tab-content" data-index="{{index}}" data-text="{{item.title}}"  data-path="{{item.pagePath}}"  bindtap="onTabbarItemTap">
       <view class="ha-tab-icon">
         <image class='tab-icon' src="{{item.icon}}"></image>
