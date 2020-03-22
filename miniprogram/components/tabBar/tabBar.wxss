@@ -74,7 +74,7 @@
   color: #0083d2;
 }
 
-image {
+.ha-tab-icon image {
   width: 48rpx;
   height: 40rpx;
   /* background-color: lightcyan; */
