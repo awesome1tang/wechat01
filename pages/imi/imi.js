@@ -70,10 +70,10 @@ handleRecordStart:function(){
 
 handleRecordStop:function(){
   
-  recorderManager.stop((res) => {
-    console.log(res)
+  recorderManager.onStop((res) => {
+    console.log('recorder stop', res)
+    const { tempFilePath } = res
   })
-  
 
 
 },
