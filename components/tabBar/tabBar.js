@@ -3,9 +3,9 @@ Component({
     business: [
      
       {
-        title: '库存管理',
-        icon: "../../images/buy_tabbar.png",
-        selectedIcon: "../../images/buy_tabbar_checked.png",
+        title: '运动',
+        icon: "../../images/321.png",
+        selectedIcon: "../../images/407.png",
         pagePath:"../../pages/index/index"
       },
       {
