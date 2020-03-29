@@ -18,7 +18,7 @@ Component({
         title: '我的',
         icon: "../../images/me_tabbar.png",
         selectedIcon: "../../images/me_tabbar_checked.png",
-        pagePath: "../../pages/index/index"
+        pagePath: "../../pages/userinfo/userinfo"
       }
     ]
   },
